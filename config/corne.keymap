@@ -96,6 +96,41 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <32 33>;
         };
+
+        n_1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <0 1>;
+        };
+
+        n_2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <1 2>;
+        };
+
+        n_3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <2 3>;
+        };
+
+        n_4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <3 4>;
+        };
+
+        n_5 {
+            bindings = <&kp N5>;
+            key-positions = <4 5>;
+        };
+
+        copy {
+            bindings = <&kp LS(LC(C))>;
+            key-positions = <27 28>;
+        };
+
+        paste {
+            bindings = <&kp LS(LC(V))>;
+            key-positions = <28 29>;
+        };
     };
 
     //
@@ -120,17 +155,6 @@
             >;
         };
 
-        NUM {
-            bindings = <
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &kp HOME
-&trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &kp PAGE_UP      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans        &kp END
-&trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &kp PAGE_DOWN    &browsertab     &trans          &trans        &trans           &trans        &trans
-                                          &kp NUMBER_0  &trans        &trans           &trans          &trans          &trans
-            >;
-
-            label = "NumNav";
-        };
-
         SYM {
             display-name = "Symbols";
 
@@ -148,13 +172,24 @@
             >;
         };
 
+        NUM {
+            bindings = <
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &kp HOME
+&trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &kp PAGE_UP      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans        &kp END
+&trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &kp PAGE_DOWN    &browsertab     &kp K_FORWARD   &trans        &trans           &trans        &trans
+                                          &kp NUMBER_0  &kp K_BACK    &trans           &trans          &trans          &trans
+            >;
+
+            label = "NumNav";
+        };
+
         ADJ {
             display-name = "System";
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &studio_unlock
-&trans  &kp F11       &kp F12       &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans       &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &bootloader  &bt BT_CLR
-                                    &trans        &trans        &trans          &trans  &trans  &trans
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6             &kp F7           &kp F8  &kp F9  &kp F10      &studio_unlock
+&trans  &kp F11       &kp F12       &trans        &trans        &trans          &trans             &trans           &trans  &trans  &trans       &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &bootloader  &bt BT_CLR
+                                    &trans        &trans        &trans          &trans             &trans           &trans
             >;
         };
     };
