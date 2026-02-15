@@ -6,8 +6,10 @@ manifest:
    #  url-base: https://github.com/kevinpastor
    #- name: dsifry
    #  url-base: https://github.com/dsifry
-    - name: m165437
-      url-base: https://github.com/M165437
+   #- name: m165437
+   #  url-base: https://github.com/M165437
+    - name: nyriu
+      url-base: https://github.com/Nyriu
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -20,7 +22,7 @@ manifest:
     # remote: dsifry
     # revision: main
     - name: nice-view-gem
-      remote: m165437
+      remote: nyriu
       revision: main
   self:
     path: config
