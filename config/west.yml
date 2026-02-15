@@ -4,13 +4,18 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kevinpastor
       url-base: https://github.com/kevinpastor
+    - name: dsifry
+      url-base: https://github.com/dsifry
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: 118359c83efa0758144489fd5e12cc6f5bdbad4c
       import: app/west.yml
-    - name: nice-view-elemental
-      remote: kevinpastor
-      revision: update-to-zmk-0.4
+    # - name: nice-view-elemental
+    #   remote: kevinpastor
+    #   revision: update-to-zmk-0.4
+    - name: nice-view-mod
+      remote: dsifry
+      revision: main
   self:
     path: config
