@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: nice-view-elemental
       remote: kevinpastor
-      revision: main
+      revision: update-to-zmk-0.4
   self:
     path: config
