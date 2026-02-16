@@ -81,28 +81,16 @@
         DEF {
             display-name = "Base";
 
-            // -----------------------------------------------------------------------------------------
-            // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
-            // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
-            // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
-            // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
-
             bindings = <
-&trans     &kp Q    &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp DELETE
-&kp LSHFT  &kp A    &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&kp LCTRL  &lt 1 Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                           &trans  &trans  &trans    &trans  &trans  &trans
+&trans     &kp Q    &kp W  &kp E         &kp R      &kp T      &kp Y                   &kp U                   &kp I           &kp O        &kp P     &kp DELETE
+&kp LSHFT  &kp A    &kp S  &kp D         &kp F      &kp G      &kp H                   &kp J                   &kp K           &kp L        &kp SEMI  &trans
+&kp LCTRL  &lt 1 Z  &kp X  &kp C         &kp V      &kp B      &kp N                   &kp M                   &kp COMMA       &kp DOT      &kp FSLH  &trans
+                           &lt 2 ESCAPE  &lt 0 TAB  &mt LEFT_META RETURN    &mt LEFT_GUI BACKSPACE  &lt 2 SPACE     &lt 3 ESCAPE
             >;
         };
 
         SYM {
             display-name = "Symbols";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
 &trans  &kp SQT          &kp DOUBLE_QUOTES  &kp EQUAL    &kp CARET    &kp DOLLAR        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTRK      &kp PLUS              &trans  &trans
@@ -117,7 +105,7 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans                  &trans                  &trans          &trans        &trans           &trans  &trans
 &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans     &kp PAGE_UP             &kp LEFT_ARROW          &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0     &kp PAGE_DOWN           &kp HOME                &kp END         &trans        &trans           &trans  &trans
-                                    &lt 2 ESCAPE  &lt 0 TAB  &mt LEFT_META RETURN    &mt LEFT_GUI BACKSPACE  &lt 2 SPACE     &lt 3 ESCAPE
+                                            &trans       &trans       &trans            &trans                &trans                 &trans
             >;
 
             label = "NavNum";
