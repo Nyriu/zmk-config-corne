@@ -74,7 +74,7 @@
         };
 
         SYS {
-            bindings = <&tog 3>;
+            bindings = <&mo 3>;
             key-positions = <36 41>;
         };
     };
